@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Merchant documentation for the Pastel Macaroon Shopify theme, version 1.0.0.">
+    <meta name="theme-version" content="1.0.0">
+    <title>Pastel Macaroon theme documentation</title>
+    <link rel="stylesheet" href="assets/docs.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to documentation</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./">Pastel Macaroon documentation</a>
+        <span class="version-badge">Version 1.0.0</span>
+      </div>
+    </header>
+
+    <div class="docs-shell">
+      <nav class="docs-nav" aria-label="Documentation contents">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#getting-started">Getting started</a></li>
+          <li><a href="#global-settings">Global settings</a></li>
+          <li><a href="#sections-and-blocks">Sections and blocks</a></li>
+          <li><a href="#product-media">Product media and swatches</a></li>
+          <li><a href="#markets">Markets and localization</a></li>
+          <li><a href="#selling-plans">Selling plans</a></li>
+          <li><a href="#app-blocks">App blocks</a></li>
+          <li><a href="#updates">Theme updates</a></li>
+          <li><a href="#limitations">Known limitations</a></li>
+          <li><a href="#troubleshooting">Troubleshooting</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#support-policy">Support policy</a></li>
+        </ol>
+      </nav>
+
+      <main class="docs-content" id="main-content">
+        <section class="docs-hero" aria-labelledby="docs-title">
+          <p class="eyebrow">Merchant guide · version 1.0.0</p>
+          <h1 id="docs-title">Build a polished store with Pastel Macaroon</h1>
+          <p class="docs-hero__lede">This guide covers installation, theme-editor setup, product media, Shopify Markets, subscriptions, app blocks, safe updates and common problems.</p>
+          <p class="status-note"><strong>Release candidate:</strong> version 1.0.0 is still completing Shopify Theme Store review preparation. The documentation describes the current committed theme.</p>
+        </section>
+
+        <section class="docs-section" id="getting-started">
+          <p class="eyebrow">01 · Setup</p>
+          <h2>Getting started</h2>
+          <h3>Install the theme</h3>
+          <ol>
+            <li>In Shopify admin, go to <strong>Online Store → Themes</strong>.</li>
+            <li>Select <strong>Add theme → Upload zip file</strong>, then choose the Pastel Macaroon package.</li>
+            <li>Open <strong>Customize</strong> on the unpublished copy. Keep the published theme available as a rollback until review is complete.</li>
+            <li>Set the logo, typography and colors before configuring individual templates.</li>
+            <li>Preview desktop and mobile, test product selection and cart, then publish when ready.</li>
+          </ol>
+          <div class="callout">
+            <strong>Installation does not copy demo catalog data.</strong>
+            Products, collections, menus, policies, markets, files, selling plans and app configuration belong to the store. Select those resources in the theme editor after installation.
+          </div>
+          <h3>Recommended preparation</h3>
+          <ul>
+            <li>Create the main and footer navigation menus.</li>
+            <li>Add descriptive alt text and focal points to important images.</li>
+            <li>Configure shipping, payments, policies and customer accounts in Shopify admin.</li>
+            <li>Prepare at least one collection and product before configuring product-led home sections.</li>
+          </ul>
+        </section>
+
+        <section class="docs-section" id="global-settings">
+          <p class="eyebrow">02 · Theme settings</p>
+          <h2>Global settings</h2>
+          <p>Open <strong>Theme settings</strong> in the editor. The following controls affect the whole storefront.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Group</th><th>Setting</th><th>Purpose</th></tr></thead>
+              <tbody>
+                <tr data-setting-id="logo"><td>Content</td><td>Logo</td><td>Store logo used in the header and password page.</td></tr>
+                <tr data-setting-id="logo_width"><td>Content</td><td>Logo width</td><td>Desktop logo width; responsive limits protect smaller screens.</td></tr>
+                <tr data-setting-id="favicon"><td>Content</td><td>Favicon</td><td>Square browser icon generated at 32 × 32 pixels.</td></tr>
+                <tr data-setting-id="brand_text"><td>Content</td><td>Brand text</td><td>Text fallback when no logo is selected.</td></tr>
+                <tr data-setting-id="type_primary_font"><td>Typography</td><td>Primary font</td><td>Shopify-hosted regular, bold, italic and bold-italic faces.</td></tr>
+                <tr data-setting-id="max_page_width"><td>Layout</td><td>Maximum page width</td><td>Maximum content canvas width.</td></tr>
+                <tr data-setting-id="min_page_margin"><td>Layout</td><td>Minimum page margin</td><td>Horizontal breathing room on smaller viewports.</td></tr>
+                <tr data-setting-id="background_color"><td>Colors</td><td>Background</td><td>Default page background.</td></tr>
+                <tr data-setting-id="foreground_color"><td>Colors</td><td>Foreground</td><td>Default body copy and control color.</td></tr>
+                <tr data-setting-id="primary_color"><td>Colors</td><td>Primary</td><td>Primary surfaces and accents.</td></tr>
+                <tr data-setting-id="secondary_color"><td>Colors</td><td>Secondary</td><td>Secondary decorative surfaces.</td></tr>
+                <tr data-setting-id="accent_color"><td>Colors</td><td>Accent</td><td>Highlights and interactive emphasis.</td></tr>
+                <tr data-setting-id="color_mode"><td>Colors</td><td>Initial color mode</td><td>Light or dark initial presentation.</td></tr>
+                <tr data-setting-id="enable_color_mode_toggle"><td>Colors</td><td>Color mode toggle</td><td>Lets customers change color mode in the header.</td></tr>
+                <tr data-setting-id="dark_background_color"><td>Colors</td><td>Dark background</td><td>Background used in dark mode.</td></tr>
+                <tr data-setting-id="dark_foreground_color"><td>Colors</td><td>Dark foreground</td><td>Text and controls used in dark mode.</td></tr>
+                <tr data-setting-id="dark_primary_color"><td>Colors</td><td>Dark primary</td><td>Primary surface in dark mode.</td></tr>
+                <tr data-setting-id="dark_secondary_color"><td>Colors</td><td>Dark secondary</td><td>Secondary surface in dark mode.</td></tr>
+                <tr data-setting-id="dark_accent_color"><td>Colors</td><td>Dark accent</td><td>Interactive emphasis in dark mode.</td></tr>
+                <tr data-setting-id="input_corner_radius"><td>Colors</td><td>Input corner radius</td><td>Shared shape for form controls.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Always verify text, icon and control contrast after changing colors. The theme cannot determine whether every merchant-selected color combination remains accessible.</p>
+        </section>
+
+        <section class="docs-section" id="sections-and-blocks">
+          <p class="eyebrow">03 · Theme editor</p>
+          <h2>Sections and blocks</h2>
+          <p>JSON templates can be rearranged in the editor. Addable sections can be used more than once; resource selections and headings belong to each instance.</p>
+          <h3>Storefront sections</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Section</th><th>Use</th></tr></thead>
+              <tbody>
+                <tr data-section-file="header.liquid"><td>Header</td><td>Main menu, predictive search, customer account, cart and color mode.</td></tr>
+                <tr data-section-file="footer.liquid"><td>Footer</td><td>Footer menu, policies, social links, Follow on Shop and localization.</td></tr>
+                <tr data-section-file="home-hero.liquid"><td>Home hero</td><td>Editorial introduction with image, product reference and call to action.</td></tr>
+                <tr data-section-file="slideshow.liquid"><td>Slideshow</td><td>Image slides with mobile images, controls and optional autoplay.</td></tr>
+                <tr data-section-file="featured-collection.liquid"><td>Featured collection</td><td>Product grid sourced from one collection.</td></tr>
+                <tr data-section-file="featured-product.liquid"><td>Featured product</td><td>Product media and native purchase form outside the product template.</td></tr>
+                <tr data-section-file="featured-products.liquid"><td>Featured collections</td><td>Merchant-arranged collection curation cards.</td></tr>
+                <tr data-section-file="product-showcase.liquid"><td>Product showcase</td><td>Manual product list with a call to action.</td></tr>
+                <tr data-section-file="collections.liquid"><td>Collection list</td><td>Paginated collection grid.</td></tr>
+                <tr data-section-file="image-with-text.liquid"><td>Image with text</td><td>Storytelling image, focal point, rich text and button.</td></tr>
+                <tr data-section-file="brand-story.liquid"><td>Brand story</td><td>Layered product imagery and narrative content.</td></tr>
+                <tr data-section-file="rich-text.liquid"><td>Rich text</td><td>Focused copy with alignment, width and two optional actions.</td></tr>
+                <tr data-section-file="newsletter.liquid"><td>Newsletter</td><td>Native Shopify customer signup.</td></tr>
+                <tr data-section-file="blog-posts.liquid"><td>Blog posts</td><td>Recent articles from a selected blog.</td></tr>
+                <tr data-section-file="video.liquid"><td>Video</td><td>Shopify-hosted video or YouTube/Vimeo URL.</td></tr>
+                <tr data-section-file="custom-liquid.liquid"><td>Custom Liquid</td><td>Merchant-authored Liquid for advanced presentation.</td></tr>
+                <tr data-section-file="custom-section.liquid"><td>Custom section</td><td>Theme blocks over an optional background image.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Template and service sections</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Section</th><th>Template responsibility</th></tr></thead>
+              <tbody>
+                <tr data-section-file="product.liquid"><td>Product</td><td>Gallery, configurable product blocks, purchase form and related products.</td></tr>
+                <tr data-section-file="collection.liquid"><td>Collection</td><td>Collection header, filtering, sorting and product grid.</td></tr>
+                <tr data-section-file="search.liquid"><td>Search</td><td>Multi-resource results, filters and sorting.</td></tr>
+                <tr data-section-file="cart.liquid"><td>Cart</td><td>Line editing, discounts, notes, checkout and optional upsell.</td></tr>
+                <tr data-section-file="blog.liquid"><td>Blog</td><td>Article list.</td></tr>
+                <tr data-section-file="article.liquid"><td>Article</td><td>Article content and comments when enabled.</td></tr>
+                <tr data-section-file="page.liquid"><td>Page</td><td>Standard page content.</td></tr>
+                <tr data-section-file="contact.liquid"><td>Contact</td><td>Store details and native contact form.</td></tr>
+                <tr data-section-file="password.liquid"><td>Password</td><td>Coming-soon content, newsletter and store access.</td></tr>
+                <tr data-section-file="404.liquid"><td>Not found</td><td>Recovery links for missing pages.</td></tr>
+                <tr data-section-file="predictive-search.liquid"><td>Predictive search</td><td>Section-rendering response used by header search.</td></tr>
+                <tr data-section-file="product-recommendations.liquid"><td>Product recommendations</td><td>Related-products response from Shopify.</td></tr>
+                <tr data-section-file="pickup-availability.liquid"><td>Pickup availability</td><td>Variant-specific location response.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Product blocks</h3>
+          <p>The main product section supports these reorderable blocks:</p>
+          <ul>
+            <li data-product-block="vendor_type">Vendor and product type</li>
+            <li data-product-block="heading">Product heading</li>
+            <li data-product-block="sku">SKU</li>
+            <li data-product-block="price">Price and tax/shipping notice</li>
+            <li data-product-block="unit_price">Unit price</li>
+            <li data-product-block="description">Description</li>
+            <li data-product-block="variant_picker">Variant picker and optional swatches</li>
+            <li data-product-block="quantity">Quantity selector and quantity rules</li>
+            <li data-product-block="purchase_options">One-time and selling-plan choices</li>
+            <li data-product-block="buy_buttons">Add to cart and accelerated checkout</li>
+            <li data-product-block="pickup_availability">Pickup availability</li>
+            <li data-product-block="installments">Shop Pay Installments terms</li>
+            <li data-product-block="complementary_products">Complementary products</li>
+            <li data-product-block="accordion">Disclosure content</li>
+            <li data-product-block="custom_liquid">Custom Liquid</li>
+            <li data-product-block="@app">App block</li>
+          </ul>
+        </section>
+
+        <section class="docs-section" id="product-media">
+          <p class="eyebrow">04 · Catalog presentation</p>
+          <h2>Product media and swatches</h2>
+          <h3>Media</h3>
+          <p>Add images, Shopify-hosted video, external YouTube/Vimeo video or 3D models in <strong>Products → select product → Media</strong>. The product gallery uses the selected variant's featured media first, renders thumbnails for multiple media items and opens images in an accessible dialog lightbox.</p>
+          <ul>
+            <li>Write useful alt text for informative images. Decorative placeholders do not need merchant-written alt text.</li>
+            <li>Set focal points in Shopify for images that may be cropped.</li>
+            <li>Use compressed source files. The theme requests responsive Shopify CDN sizes but cannot repair a low-quality upload.</li>
+            <li>3D/AR availability depends on a valid Shopify 3D model and customer device support.</li>
+          </ul>
+          <h3>Variant swatches</h3>
+          <ol>
+            <li>Configure product option values and their swatch color or image in Shopify admin.</li>
+            <li>In the product template, open the <strong>Variant picker</strong> block.</li>
+            <li>Enable <strong>Show swatches</strong>. Values without swatch data remain readable text options.</li>
+          </ol>
+          <p>Unavailable combinations are disabled or marked unavailable. Swatches never replace the accessible option name.</p>
+        </section>
+
+        <section class="docs-section" id="markets">
+          <p class="eyebrow">05 · International selling</p>
+          <h2>Shopify Markets and localization</h2>
+          <p>The footer uses Shopify's native localization form. Country/region and language controls appear only when the active store context offers more than one choice.</p>
+          <ol>
+            <li>Configure countries, regions, domains and currencies in <strong>Settings → Markets</strong>.</li>
+            <li>Add and publish languages in <strong>Settings → Languages</strong>, then translate storefront resources and theme locale content.</li>
+            <li>Preview each market from the theme editor or market selector and verify currency, policy, shipping and translation behavior.</li>
+          </ol>
+          <div class="callout">
+            <strong>What the theme does not configure</strong>
+            Pastel Macaroon displays Shopify's localization data. It does not create markets, conversion rates, domains, duties, translations or payment methods.
+          </div>
+        </section>
+
+        <section class="docs-section" id="selling-plans">
+          <p class="eyebrow">06 · Subscriptions</p>
+          <h2>Selling plans and purchase options</h2>
+          <p>When a product has Shopify selling plans, Product and Featured product display one-time and plan choices, allocation prices, compare-at prices and unit prices. The selected selling-plan ID is submitted with the product form and shown again in the cart.</p>
+          <ol>
+            <li>Create selling plans using Shopify's subscription capabilities or a compatible subscription app.</li>
+            <li>Assign plans to products and verify that each variant has the intended allocation.</li>
+            <li>Keep the <strong>Purchase options</strong> block in the Product template.</li>
+            <li>Test one-time, optional subscription and subscription-required products through cart and test checkout.</li>
+          </ol>
+          <p>The theme does not create, bill, pause or manage subscriptions. Without selling-plan data, purchase-option controls stay hidden and ordinary purchases continue to work.</p>
+        </section>
+
+        <section class="docs-section" id="app-blocks">
+          <p class="eyebrow">07 · Extensions</p>
+          <h2>App blocks</h2>
+          <p>Product and Featured product accept Shopify theme app blocks. Install the app first, then open the relevant section in the theme editor and select <strong>Add block → Apps</strong>.</p>
+          <ul>
+            <li>Configure the app block through its own settings.</li>
+            <li>Place it in the intended order and test mobile, accelerated checkout and no-JavaScript fallbacks where relevant.</li>
+            <li>If the block disappears after uninstalling an app, remove the orphaned block from each affected template.</li>
+          </ul>
+          <p>Core browsing and purchase behavior does not require an app. App output, subscriptions and review data remain the app provider's responsibility.</p>
+        </section>
+
+        <section class="docs-section" id="updates">
+          <p class="eyebrow">08 · Maintenance</p>
+          <h2>Theme updates</h2>
+          <ol>
+            <li>Duplicate the published theme and download a backup before updating.</li>
+            <li>Review the new entry in the release notes and any migration instructions.</li>
+            <li>Install the update as an unpublished theme. Do not overwrite the only working copy.</li>
+            <li>Compare global settings, templates, app blocks and custom code. Reapply intentional code changes manually when Shopify cannot carry them forward.</li>
+            <li>Test navigation, search, product variants, cart, Markets and checkout on desktop and mobile.</li>
+            <li>Publish the verified copy and retain the previous theme for rollback.</li>
+          </ol>
+          <p>Pastel Macaroon uses semantic `MAJOR.MINOR.PATCH` versions. Patch and minor releases preserve existing merchant configuration; a major release includes explicit migration instructions.</p>
+        </section>
+
+        <section class="docs-section" id="limitations">
+          <p class="eyebrow">09 · Boundaries</p>
+          <h2>Known limitations and prerequisites</h2>
+          <ul>
+            <li>The included locale is English. Add and publish translations for additional languages.</li>
+            <li>Complementary and related recommendations depend on Shopify recommendation data; an unconfigured response can be empty.</li>
+            <li>Pickup availability needs pickup-enabled locations and variant inventory.</li>
+            <li>Shop Pay Installments content depends on store, customer and product eligibility.</li>
+            <li>Follow on Shop appears only when Shopify returns an eligible follow control.</li>
+            <li>Predictive search enhances the header with JavaScript; the ordinary search form remains the fallback.</li>
+            <li>External YouTube/Vimeo playback depends on the provider, consent configuration and network availability.</li>
+            <li>Custom Liquid and app blocks can introduce markup, performance or accessibility issues outside the theme's control.</li>
+          </ul>
+        </section>
+
+        <section class="docs-section" id="troubleshooting">
+          <p class="eyebrow">10 · Problem solving</p>
+          <h2>Troubleshooting</h2>
+          <h3>A section is empty</h3>
+          <p>Select the required product, collection, blog, image or video in the section settings. Some sections intentionally render a neutral placeholder or no wrapper when their resource is empty.</p>
+          <h3>Filters are missing</h3>
+          <p>Enable filtering in the Collection/Search section and configure storefront filters in Shopify Search &amp; Discovery. Product type, vendor and tag fallbacks appear when native equivalents are unavailable.</p>
+          <h3>Swatches show as text</h3>
+          <p>Confirm that the option values have swatch color/image data in Shopify and that <strong>Show swatches</strong> is enabled in the Variant picker block.</p>
+          <h3>Language or country selectors are missing</h3>
+          <p>The controls are hidden when only one option is available. Publish another language or activate another market/country and preview the correct market context.</p>
+          <h3>Selling plans are missing or unavailable</h3>
+          <p>Verify selling-plan assignments for the selected variant. A subscription-required product without an allocation cannot be purchased until its plan data is corrected.</p>
+          <h3>Changes do not appear</h3>
+          <p>Confirm that you edited the correct template and theme copy. Save the editor, preview in a private window, and check whether an app or market-specific template is supplying different content.</p>
+        </section>
+
+        <section class="docs-section" id="faq">
+          <p class="eyebrow">11 · Frequently asked questions</p>
+          <h2>FAQ</h2>
+          <details>
+            <summary>Does the theme install demo products or images?</summary>
+            <div>No. Product, collection, menu, policy and media resources belong to the store and are selected after installation.</div>
+          </details>
+          <details>
+            <summary>Can sections be used more than once?</summary>
+            <div>Yes. Addable sections use instance-specific settings and IDs. Keep page length and performance in mind when creating many media-heavy sections.</div>
+          </details>
+          <details>
+            <summary>Does the theme require Shopify Search &amp; Discovery?</summary>
+            <div>Core browsing works without an app. Native filter and recommendation configuration can improve results; empty recommendation data is handled safely.</div>
+          </details>
+          <details>
+            <summary>Can customers purchase without JavaScript?</summary>
+            <div>Core navigation, search, server-rendered variant selection, product submission, cart editing and checkout handoff have no-JavaScript fallbacks. Optional live enhancements are unavailable when scripts are disabled.</div>
+          </details>
+          <details>
+            <summary>Where should custom code go?</summary>
+            <div>Use a Custom Liquid section/block or an app block when possible. Duplicate the theme before editing source, and document changes because custom code might need manual migration during updates.</div>
+          </details>
+          <details>
+            <summary>Which browsers are supported?</summary>
+            <div>Use current evergreen desktop and mobile browsers. Test your own app blocks, consent tools and checkout setup on the devices important to your customers.</div>
+          </details>
+        </section>
+
+        <section class="docs-section" id="support-policy">
+          <p class="eyebrow">12 · Support</p>
+          <h2>Support policy</h2>
+          <p>Support covers reproducible defects in the current Pastel Macaroon release, clarification of documented settings, accessibility regressions caused by theme code and compatibility with supported Shopify storefront features.</p>
+          <h3>Service levels</h3>
+          <ul>
+            <li>New requests receive an initial response within two business days.</li>
+            <li>Critical defects blocking storefront browsing, product purchase or checkout handoff are triaged immediately when received and prioritized for an emergency patch.</li>
+            <li>Confirmed ordinary defects are scheduled for the next appropriate patch release and tracked through validation, deployment and release notes.</li>
+          </ul>
+          <h3>Before opening a request</h3>
+          <p>Prepare the store URL, theme version, affected template, exact reproduction steps, expected and actual results, device/browser version, screenshots or video, and whether the issue remains in a clean unmodified copy.</p>
+          <h3>Scope boundaries</h3>
+          <p>Support does not include custom development, catalog entry, third-party app internals, Shopify admin/account configuration, subscription billing rules or issues reproducible only after unsupported source modifications. We will still help identify whether the defect belongs to the theme, Shopify platform or an app provider.</p>
+          <div class="callout">
+            <strong>Support intake status</strong>
+            A public request form and its operational escalation workflow are a separate pre-release deliverable. Until that endpoint is published in Theme info, this page states the policy but does not claim that intake is active.
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>Pastel Macaroon documentation · version 1.0.0</span>
+        <a href="#main-content">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
