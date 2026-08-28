@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bkolasinski.github.io/shopify-themes/sitemap.xml
+Sitemap: https://bkolasinski.github.io/pastel-macaroon/sitemap.xml

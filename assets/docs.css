@@ -38,7 +38,11 @@ a:hover {
 }
 
 a:focus-visible,
-summary:focus-visible {
+summary:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   border-radius: 0.2rem;
   outline: 3px solid #6d4b8f;
   outline-offset: 3px;
@@ -103,6 +107,12 @@ pre code {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .brand {
@@ -254,6 +264,87 @@ h1 {
 .callout strong {
   display: block;
   margin-bottom: 0.25rem;
+}
+
+.button-link,
+.support-form button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font: inherit;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.support-form {
+  display: grid;
+  max-width: 820px;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.support-form__field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.support-form__field label,
+.support-form legend {
+  font-weight: 750;
+}
+
+.support-form__field small,
+.support-form__privacy {
+  color: var(--muted);
+}
+
+.support-form input,
+.support-form select,
+.support-form textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.72rem 0.8rem;
+  border: 1px solid #bdaab6;
+  border-radius: 0.55rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.support-form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.support-form fieldset {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+}
+
+.support-form__privacy {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.7rem;
+}
+
+.support-form__privacy input {
+  width: 1.2rem;
+  min-height: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.support-page {
+  width: min(860px, calc(100% - 32px));
+  margin-inline: auto;
+  padding-block: 48px 90px;
 }
 
 .table-wrap {

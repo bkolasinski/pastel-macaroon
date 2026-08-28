@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Pastel Macaroon documentation
+    url: https://bkolasinski.github.io/pastel-macaroon/
+    about: Review setup, troubleshooting, FAQ and the support policy before opening a request.
+  - name: Public support request form
+    url: https://bkolasinski.github.io/pastel-macaroon/support.html
+    about: Prepare a structured public support ticket with the required diagnostic details.

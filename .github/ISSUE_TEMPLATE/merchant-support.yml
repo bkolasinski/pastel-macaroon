@@ -1,0 +1,104 @@
+name: Merchant support request
+description: Report a reproducible problem with the Pastel Macaroon Shopify theme.
+title: "[Support] "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue and every value submitted below will be public. Never provide passwords, customer or payment data, API credentials, Theme Access passwords, private app tokens or unredacted admin screenshots.
+  - type: input
+    id: merchant-contact
+    attributes:
+      label: Public contact identifier
+      description: Use a name or GitHub username that may safely appear in a public ticket. Do not enter a private email address.
+    validations:
+      required: true
+  - type: input
+    id: store-domain-and-url
+    attributes:
+      label: Store domain and affected storefront URL
+      placeholder: example.myshopify.com — https://example.com/products/example
+    validations:
+      required: true
+  - type: input
+    id: theme-version-and-copy-role
+    attributes:
+      label: Theme version and copy role
+      placeholder: 1.0.0 — unpublished duplicate
+    validations:
+      required: true
+  - type: dropdown
+    id: affected-theme-surface
+    attributes:
+      label: Affected theme surface
+      options:
+        - Home page or section
+        - Header or navigation
+        - Collection or search
+        - Product page or product form
+        - Cart or checkout handoff
+        - Blog, article or page
+        - Customer account
+        - Markets or localization
+        - Theme editor
+        - Accessibility
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Exact reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected-and-actual-results
+    attributes:
+      label: Expected and actual results
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Business impact and severity
+      options:
+        - Critical — browsing, purchase or checkout handoff is blocked
+        - High — major storefront function is unavailable
+        - Normal — ordinary defect or documented behavior question
+    validations:
+      required: true
+  - type: textarea
+    id: business-impact
+    attributes:
+      label: Business impact details
+    validations:
+      required: true
+  - type: textarea
+    id: device-and-browser
+    attributes:
+      label: Device, operating system and browser/app version
+    validations:
+      required: true
+  - type: textarea
+    id: redacted-evidence
+    attributes:
+      label: Redacted evidence
+      description: Provide a public screenshot/video URL, console message or request ID with all secrets and customer data removed.
+    validations:
+      required: true
+  - type: textarea
+    id: clean-copy-reproduction
+    attributes:
+      label: Clean-copy reproduction result
+      description: State whether the issue reproduces in a fresh, unmodified duplicate and what you tested.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy-confirmation
+    attributes:
+      label: Public ticket confirmation
+      options:
+        - label: I removed all passwords, customer/payment data, credentials, private tokens and unredacted admin information, and I understand that this issue will be public.
+          required: true
