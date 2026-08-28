@@ -8,6 +8,8 @@ body:
     attributes:
       value: |
         This issue and every value submitted below will be public. Never provide passwords, customer or payment data, API credentials, Theme Access passwords, private app tokens or unredacted admin screenshots.
+
+        New requests receive an initial response within two business days. Critical defects that block storefront browsing, purchase or checkout handoff are triaged immediately when received.
   - type: input
     id: merchant-contact
     attributes:
