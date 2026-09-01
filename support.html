@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Public support request form for the Pastel Macaroon Shopify theme.">
-    <title>Pastel Macaroon support request</title>
+    <meta name="description" content="Support access for the Pastel Macaroon Shopify theme.">
+    <title>Pastel Macaroon support</title>
     <link rel="stylesheet" href="assets/docs.css">
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to support form</a>
+    <a class="skip-link" href="#main-content">Skip to support information</a>
     <header class="site-header">
       <div class="site-header__inner">
         <a class="brand" href="./">Pastel Macaroon documentation</a>
@@ -18,100 +18,25 @@
 
     <main class="support-page" id="main-content">
       <p class="eyebrow">Merchant support</p>
-      <h1>Open a support request</h1>
-      <p class="docs-hero__lede">Describe a reproducible theme problem and this form will prepare a ticket in the public Pastel Macaroon support queue.</p>
-      <p>New requests receive an initial response within two business days. Critical defects that block storefront browsing, purchase or checkout handoff are triaged immediately when received.</p>
+      <h1>Support has moved to Crabby Support</h1>
+      <p class="docs-hero__lede">Pastel Macaroon support requests are handled through the private company support portal at <a href="https://support.crabby.pl/">support.crabby.pl</a>.</p>
+      <p>No GitHub account is required. A successful submission creates a private ticket, returns a ticket ID and sends an acknowledgement to the email address entered in the form. New requests receive an initial response within two business days. Critical defects that block storefront browsing, purchase or checkout handoff are triaged immediately when received.</p>
 
       <div class="callout">
-        <strong>Do not include private or sensitive information.</strong>
-        Submitted tickets are public. Never provide passwords, customer or payment data, API credentials, Theme Access passwords, private app tokens or unredacted admin screenshots. GitHub requires an account when you submit the prepared ticket.
+        <strong>Send only information needed for diagnosis.</strong>
+        Do not provide passwords, customer or payment data, API credentials, Theme Access passwords, private app tokens or unredacted admin screenshots. If store access is needed, support will request time-limited Shopify collaborator access with only the required permissions.
       </div>
 
-      <form class="support-form" id="SupportRequest" action="https://github.com/bkolasinski/pastel-macaroon/issues/new" method="get">
-        <input type="hidden" name="labels" value="support">
-        <input type="hidden" name="title" id="IssueTitle">
-        <input type="hidden" name="body" id="IssueBody">
+      <h2>Prepare before opening a request</h2>
+      <ul>
+        <li>Your name, reply email address and Shopify store URL.</li>
+        <li>The affected product or theme, theme version and page URL.</li>
+        <li>Severity, exact reproduction steps, expected result and actual result.</li>
+        <li>Device, operating system, browser or app version and a clean-copy reproduction result.</li>
+        <li>Up to three relevant JPEG, PNG or WebP screenshots with sensitive information removed.</li>
+      </ul>
 
-        <div class="support-form__field">
-          <label for="MerchantContact">Public contact identifier</label>
-          <input id="MerchantContact" name="merchant-contact" type="text" autocomplete="name" maxlength="120" required>
-          <small>Use a name or GitHub username that may safely appear in a public ticket. Do not enter a private email address.</small>
-        </div>
-
-        <div class="support-form__field">
-          <label for="StoreUrl">Store domain and affected storefront URL</label>
-          <input id="StoreUrl" name="store-domain-and-url" type="text" inputmode="url" maxlength="500" placeholder="example.myshopify.com — https://example.com/products/example" required>
-        </div>
-
-        <div class="support-form__field">
-          <label for="ThemeVersion">Theme version and copy role</label>
-          <input id="ThemeVersion" name="theme-version-and-copy-role" type="text" maxlength="160" placeholder="1.0.0 — unpublished duplicate" required>
-        </div>
-
-        <div class="support-form__field">
-          <label for="Surface">Affected theme surface</label>
-          <select id="Surface" name="affected-theme-surface" required>
-            <option value="">Select a surface</option>
-            <option>Home page or section</option>
-            <option>Header or navigation</option>
-            <option>Collection or search</option>
-            <option>Product page or product form</option>
-            <option>Cart or checkout handoff</option>
-            <option>Blog, article or page</option>
-            <option>Customer account</option>
-            <option>Markets or localization</option>
-            <option>Theme editor</option>
-            <option>Accessibility</option>
-            <option>Other</option>
-          </select>
-        </div>
-
-        <div class="support-form__field">
-          <label for="Summary">Short problem summary</label>
-          <input id="Summary" name="summary" type="text" maxlength="160" required>
-        </div>
-
-        <div class="support-form__field">
-          <label for="Steps">Exact reproduction steps</label>
-          <textarea id="Steps" name="reproduction-steps" maxlength="2500" required></textarea>
-        </div>
-
-        <div class="support-form__field">
-          <label for="ExpectedActual">Expected and actual results</label>
-          <textarea id="ExpectedActual" name="expected-and-actual-results" maxlength="2000" required></textarea>
-        </div>
-
-        <div class="support-form__field">
-          <label for="Impact">Business impact and severity</label>
-          <textarea id="Impact" name="business-impact" maxlength="1200" placeholder="Critical, high or normal — explain what customers cannot complete." required></textarea>
-        </div>
-
-        <div class="support-form__field">
-          <label for="Environment">Device, operating system and browser/app version</label>
-          <textarea id="Environment" name="device-and-browser" maxlength="1200" required></textarea>
-        </div>
-
-        <div class="support-form__field">
-          <label for="Evidence">Redacted evidence</label>
-          <textarea id="Evidence" name="redacted-evidence" maxlength="1600" placeholder="Public screenshot/video URL, console message or request ID with all secrets and customer data removed." required></textarea>
-        </div>
-
-        <div class="support-form__field">
-          <label for="CleanCopy">Clean-copy reproduction result</label>
-          <textarea id="CleanCopy" name="clean-copy-reproduction" maxlength="1200" placeholder="State whether the issue reproduces in a fresh, unmodified duplicate and what you tested." required></textarea>
-        </div>
-
-        <fieldset>
-          <legend>Public ticket confirmation</legend>
-          <label class="support-form__privacy">
-            <input id="PublicConfirmation" name="public-confirmation" type="checkbox" required>
-            <span>I have removed all passwords, customer/payment data, credentials, private tokens and unredacted admin information, and I understand that the resulting GitHub issue will be public.</span>
-          </label>
-        </fieldset>
-
-        <button type="submit">Prepare GitHub support ticket</button>
-        <noscript><p>JavaScript is required to combine these fields into a ticket. You can instead use the <a href="https://github.com/bkolasinski/pastel-macaroon/issues/new?template=merchant-support.yml">native GitHub support form</a>.</p></noscript>
-      </form>
+      <p><a class="button-link" href="https://support.crabby.pl/">Open the private support portal</a></p>
     </main>
 
     <footer class="site-footer">
@@ -120,42 +45,5 @@
         <a href="./">Return to documentation</a>
       </div>
     </footer>
-
-    <script>
-      const supportForm = document.querySelector('#SupportRequest');
-      const issueTitle = document.querySelector('#IssueTitle');
-      const issueBody = document.querySelector('#IssueBody');
-      const fieldLabels = [
-        ['merchant-contact', 'Public contact identifier'],
-        ['store-domain-and-url', 'Store domain and affected URL'],
-        ['theme-version-and-copy-role', 'Theme version and copy role'],
-        ['affected-theme-surface', 'Affected theme surface'],
-        ['reproduction-steps', 'Reproduction steps'],
-        ['expected-and-actual-results', 'Expected and actual results'],
-        ['business-impact', 'Business impact and severity'],
-        ['device-and-browser', 'Device and browser'],
-        ['redacted-evidence', 'Redacted evidence'],
-        ['clean-copy-reproduction', 'Clean-copy reproduction']
-      ];
-
-      supportForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        if (!supportForm.reportValidity()) return;
-
-        const data = new FormData(supportForm);
-        const surface = data.get('affected-theme-surface');
-        const summary = data.get('summary');
-        const sections = fieldLabels.map(([name, label]) => `## ${label}\n\n${data.get(name)}`);
-        const url = new URL(supportForm.action);
-
-        issueTitle.value = `[Support] ${surface}: ${summary}`;
-        issueBody.value = `${sections.join('\n\n')}\n\n---\nI confirm that this public ticket contains no passwords, customer/payment data, credentials, private tokens or unredacted admin information.`;
-        url.searchParams.set('labels', 'support');
-        url.searchParams.set('title', issueTitle.value);
-        url.searchParams.set('body', issueBody.value);
-        window.location.assign(url);
-      });
-    </script>
   </body>
 </html>
