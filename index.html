@@ -43,24 +43,26 @@
         <section class="docs-hero" aria-labelledby="docs-title">
           <p class="eyebrow">Merchant guide · version 1.0.0</p>
           <h1 id="docs-title">Build a polished store with Pastel Macaroon</h1>
-          <p class="docs-hero__lede">This guide covers installation, theme-editor setup, product media, Shopify Markets, subscriptions, app blocks, safe updates and common problems.</p>
-          <p class="status-note"><strong>Release candidate:</strong> version 1.0.0 is still completing Shopify Theme Store review preparation. The documentation describes the current committed theme.</p>
+          <p class="docs-hero__lede">This guide covers adding Pastel Macaroon from the Shopify Theme Store, theme-editor setup, product media, Shopify Markets, subscriptions, app blocks, safe updates and common problems.</p>
+          <p class="status-note"><strong>Theme Store edition:</strong> Pastel Macaroon is added and licensed through the Shopify Theme Store, which also provides access to supported theme updates for the store that purchased it.</p>
         </section>
 
         <section class="docs-section" id="getting-started">
           <p class="eyebrow">01 · Setup</p>
           <h2>Getting started</h2>
-          <h3>Install the theme</h3>
+          <h3>Add the theme from the Shopify Theme Store</h3>
           <ol>
             <li>In Shopify admin, go to <strong>Online Store → Themes</strong>.</li>
-            <li>Select <strong>Add theme → Upload zip file</strong>, then choose the Pastel Macaroon package.</li>
-            <li>Open <strong>Customize</strong> on the unpublished copy. Keep the published theme available as a rollback until review is complete.</li>
-            <li>Set the logo, typography and colors before configuring individual templates.</li>
-            <li>Preview desktop and mobile, test product selection and cart, then publish when ready.</li>
+            <li>Select <strong>Add themes → Visit Theme Store</strong>, find Pastel Macaroon and select <strong>Try theme</strong>.</li>
+            <li>Return to <strong>Online Store → Themes</strong>. Pastel Macaroon appears as a theme trial in <strong>Draft themes</strong>.</li>
+            <li>Select <strong>Customize</strong> and set the logo, typography and colors before configuring individual templates. Trial customizations are retained if you buy the theme.</li>
+            <li>When you are ready to use Pastel Macaroon, select <strong>Buy</strong> on its theme card. A paid theme must be purchased before it can be published, and its license applies only to the store where it was purchased.</li>
+            <li>Preview desktop and mobile, test product selection and cart, then select <strong>Publish</strong>. The previous live theme moves to Draft themes and remains available for rollback.</li>
           </ol>
+          <p>For Shopify's current purchase and trial workflow, refer to <a href="https://help.shopify.com/en/manual/online-store/themes/adding-themes">Adding, previewing, and buying themes</a>.</p>
           <div class="callout">
-            <strong>Installation does not copy demo catalog data.</strong>
-            Products, collections, menus, policies, markets, files, selling plans and app configuration belong to the store. Select those resources in the theme editor after installation.
+            <strong>Adding the theme does not copy demo catalog data.</strong>
+            Products, collections, menus, policies, markets, files, selling plans and app configuration belong to the store. Select those resources in the theme editor after adding Pastel Macaroon.
           </div>
           <h3>Recommended preparation</h3>
           <ul>
@@ -245,12 +247,13 @@
           <h2>Theme updates</h2>
           <ol>
             <li>Duplicate the published theme and download a backup before updating.</li>
-            <li>Review the new entry in the release notes and any migration instructions.</li>
-            <li>Install the update as an unpublished theme. Do not overwrite the only working copy.</li>
-            <li>Compare global settings, templates, app blocks and custom code. Reapply intentional code changes manually when Shopify cannot carry them forward.</li>
+            <li>In <strong>Online Store → Themes</strong>, select the update notification or version number on the Pastel Macaroon theme card, then review the release notes and any migration instructions.</li>
+            <li>Select <strong>Add to draft themes</strong>. Shopify creates an updated draft and carries supported theme-editor customizations into it without replacing the live theme.</li>
+            <li>Select <strong>Review</strong>, compare global settings, templates, app blocks and custom code, and check Shopify's message about whether code edits were included. Reapply intentional code changes manually when they could not be carried forward.</li>
             <li>Test navigation, search, product variants, cart, Markets and checkout on desktop and mobile.</li>
             <li>Publish the verified copy and retain the previous theme for rollback.</li>
           </ol>
+          <p>If <strong>Add to draft themes</strong> is unavailable, add a fresh copy from the Shopify Theme Store and manually reapply the required settings and customizations. Refer to Shopify's <a href="https://help.shopify.com/en/manual/online-store/themes/managing-themes/upgrading-themes">Updating themes</a> guide for the current update workflow.</p>
           <p>Pastel Macaroon uses semantic `MAJOR.MINOR.PATCH` versions. Patch and minor releases preserve existing merchant configuration; a major release includes explicit migration instructions.</p>
         </section>
 
